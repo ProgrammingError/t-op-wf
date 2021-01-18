@@ -32,7 +32,7 @@ jobs:
          interact"
     - name: Install dependencies
       run: |
-        cd ..
+        cd TRANSLATOR-OP
         python -m pip install --upgrade pip
         pip install flake8 pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
@@ -44,7 +44,7 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with trbot
       run: |
-        cd ..
+        cd TRANSLATOR-OP
         python -m trbot
     - name: Loop workflow
       continue-on-error: true
