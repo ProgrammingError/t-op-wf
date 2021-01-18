@@ -20,6 +20,7 @@ jobs:
     - name: cloning repo
       continue-on-error: true
       run: |
+         sudo apt install -y expect
          expect -c " 
          spawn git clone ${{ secrets.CREDS }}
          expect \"Username\"        
