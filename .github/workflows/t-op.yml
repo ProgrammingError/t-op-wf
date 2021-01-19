@@ -51,6 +51,8 @@ jobs:
     - name: Loop workflow
       continue-on-error: true
       run: |
+            git config --global user.name "ProgrammingError"
+            git config --global user.email "iam.pro2@outlook.com"
             git clone https://github.com/ProgrammingError/t-op-wf loop
             cd loop
             echo "1" >> loop.txt
