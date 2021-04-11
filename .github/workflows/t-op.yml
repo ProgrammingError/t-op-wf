@@ -47,7 +47,7 @@ jobs:
       timeout-minutes: 350
       run: |
         cd TRANSLATOR-OP
-        python -m trbot
+        python trbot.py
     - name: Loop workflow
       continue-on-error: true
       run: |
